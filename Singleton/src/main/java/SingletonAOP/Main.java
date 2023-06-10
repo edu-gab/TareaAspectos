@@ -1,21 +1,20 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
-package com.mycompany.main;
+package SingletonAOP;
 
 /**
- * Fuente: https://www.geeksforgeeks.org/singleton-class-java/
- * @author edu-g
+ *
+ * @author joelorrala
  */
 public class Main {
-
-    public static void main(String[] args) {
-    	Singleton x = Singleton.Singleton();
+     public static void main(String[] args) {
+        Singleton x = Singleton.getInstance();
   
-        Singleton y = Singleton.Singleton();
+        Singleton y = Singleton.getInstance();
   
-        Singleton z = Singleton.Singleton();
+        Singleton z = Singleton.getInstance();
   
         x.s = (x.s).toUpperCase();
   
